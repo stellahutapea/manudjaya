@@ -1,0 +1,56 @@
+/* Styling specific to Pengaduan component */
+.pengaduan-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+/* Header styling */
+.pengaduan-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #654321;
+    /* Dark brown color */
+}
+
+/* Form styling */
+.pengaduan-form input,
+.pengaduan-form textarea,
+.pengaduan-form select,
+.pengaduan-form label,
+.pengaduan-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pengaduan-form label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #654321;
+}
+
+.pengaduan-form button {
+    background-color: #654321;
+    /* Dark brown color */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.pengaduan-form button:hover {
+    background-color: #543c29;
+    /* Slightly darker brown on hover */
+}

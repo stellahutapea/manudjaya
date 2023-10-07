@@ -1,0 +1,195 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* Membagi navbar menjadi 3 kolom */
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+  /* z-index: 1; */
+  position: fixed;
+  /* top: 0;
+  left: 0;
+  right: 0; */
+  /* background-color: #333; */
+  z-index: 1000;
+  /* Atur nilai z-index tinggi untuk navbar */
+  /* Untuk mengatasi komponen lainnya */
+}
+
+.icon-image {
+  width: 40px;
+  height: 50px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: chocolate;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Menempatkan komponen login di pojok kanan atas */
+}
+
+.login-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: chocolate;
+}
+
+/* Tombol hamburger untuk tampilan layar kecil */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.menu-icon:hover {
+  color: white;
+}
+
+/* Media query untuk tampilan layar kecil */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .login-section {
+    display: none;
+  }
+
+  .active {
+    background-color: green;
+  }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  min-width: 160px;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Style untuk tautan dalam dropdown */
+.dropdown-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style untuk tautan dalam dropdown yang aktif */
+.dropdown-item.active {
+  background-color: #8B4513;
+  color: #fff;
+}
+
+.dropdown-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 0;
+  /* Posisikan di bawah dropdown */
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.dropdown-link:hover {
+  color: chocolate;
+}

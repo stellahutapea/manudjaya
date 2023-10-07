@@ -1,0 +1,83 @@
+/* UMKMList.css */
+.umkm-list-container {
+    text-align: center;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-top: 110px;
+    margin-bottom: 250px;
+}
+
+h1 {
+    color: #654321;
+}
+
+.umkm-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.umkm-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 300px;
+}
+
+.umkm-card:hover {
+    transform: scale(1.05);
+}
+
+.umkm-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.umkm-image {
+    /* max-width: 20%; */
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.umkm-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.umkm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fff; */
+    /* padding: 10px 0; */
+}
+
+.umkm-header h1 {
+    color: #8b4513;
+    font-size: 28px;
+    text-align: center;
+    flex: 1;
+}
+
+.umkm-registration-link {
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.umkm-registration-link:hover {
+    background-color: #703b0d;
+}
