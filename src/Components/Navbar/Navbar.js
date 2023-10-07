@@ -69,7 +69,7 @@ const Navbar = ({ user }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="dropdown-item">
-              <Link to="/keuangan" className="dropdown-link">
+              <Link to="/finance" className="dropdown-link">
                 Lap. Keuangan
               </Link>
             </div>

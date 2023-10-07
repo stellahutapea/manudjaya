@@ -109,7 +109,7 @@ const AppRouter = ({ user }) => {
           }
         />
         <Route
-          path="/keuangan"
+          path="/finance"
           element={
             <Layout>
               <Keuangan />
