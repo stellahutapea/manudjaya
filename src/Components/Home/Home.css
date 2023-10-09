@@ -12,7 +12,7 @@ body {
 }
 
 .home-container {
-  background-color: #f0f0f0;
+  background-color: #ece2e200;
   min-height: 100vh;
   display: flex;
   align-items: center;
