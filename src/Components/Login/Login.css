@@ -1,5 +1,16 @@
 /* Login.css */
 
+body {
+    background-image: url('../../Assets/Image/desa.jpg');
+    /* Ganti 'path/to/your/image.jpg' dengan lokasi relatif atau URL gambar Anda. */
+    background-size: cover;
+    /* Background image akan ditampilkan dengan ukuran sampai seluruh area body tercakup. */
+    background-repeat: no-repeat;
+    /* Mencegah gambar latar belakang berulang. */
+    background-attachment: fixed;
+    /* Membuat gambar latar belakang tetap di tempat saat menggulir halaman. (Opsional) */
+  }
+
 .login-container {
     max-width: 400px;
     margin: 0 auto;
@@ -10,6 +21,7 @@
     text-align: center;
     margin-top: 200px;
     margin-bottom: 200px;
+    /* background-image: url('../../Assets/Image/desa.jpg'); */
 }
 
 .login-container h2 {

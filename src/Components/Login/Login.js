@@ -68,7 +68,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h2>Masuk</h2>
+      <h2>Login Akun</h2>
       <form onSubmit={handleSubmit} className="login-form">
         <div className="form-group">
           <label htmlFor="email">Alamat Email</label>
