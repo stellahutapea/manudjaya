@@ -9,18 +9,18 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-logo">
           <h1>Desa Manud Jaya</h1>
-          <p>Budaya & Keindahan Alam Kami</p>
+          <p>Desa Digital Kesayangan Anda</p>
         </div>
         <div className="footer-info">
           <p>
-            Jalan Raya Desa Manud Jaya No. 123
+            
             <br />
             Email:{" "}
-            <a href="mailto:info@desamanudjaya.com">info@desamanudjaya.com</a>
+            <a href="mailto:info@desamanudjaya.com"></a>
           </p>
         </div>
         <div className="footer-social">
-          <h3>Temui Kami di Sosial Media</h3>
+          <h3></h3>
           <div className="social-icons">
             <a href="#" className="social-icon">
               <i className="fab fa-facebook"></i>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2023 Desa Manud Jaya. Hak Cipta Dilindungi.</p>
+        <p></p>
       </div>
     </footer>
   );
