@@ -66,7 +66,7 @@ const Navbar = ({ user }) => {
             to="/"
             className="nav-link"
           >
-            Beranda
+            Halaman Utama
           </Link>
         </li>
         {/* <li className="nav-item">
