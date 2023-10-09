@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 import swal from "sweetalert";
 
 import "./Service.css";
@@ -11,6 +12,10 @@ const Services = ({ user }) => {
   const handleAjukanSuratClick = () => {
     if (user && user.role) {
       navigate("/pengajuan-surat");
+      scroll.scrollToTop({
+        duration: 100, // Durasi animasi dalam milidetik
+        smooth: "easeInOutQuart", // Efek easing (percepatan/perlambatan)
+      });
     } else {
       swal({
         title: "Ooopps!",
@@ -32,14 +37,23 @@ const Services = ({ user }) => {
         </p>
       </div>
       <div className="services-grid">
-        {user.role !== "user" && user.role !== "" && (
+        {user.role !== "user" && user.role !== "" && user.role !== "admin" && (
           <div className="service-card">
             <h3>Approval Surat</h3>
             <p>
               Kami memberikan layanan persetujuan (approval) surat yang telah
               diajukan oleh warga desa.
             </p>
-            <Link to="/approval-surat" className="service-link">
+            <Link
+              onClick={() => {
+                scroll.scrollToTop({
+                  duration: 100, // Durasi animasi dalam milidetik
+                  smooth: "easeInOutQuart", // Efek easing (percepatan/perlambatan)
+                });
+              }}
+              to="/approval-surat"
+              className="service-link"
+            >
               Lihat Approval
             </Link>
           </div>
@@ -63,7 +77,16 @@ const Services = ({ user }) => {
                   Cek status pengajuan surat Anda dan pantau perkembangannya
                   melalui sistem informasi desa. Biar update beritanya !
                 </p>
-                <Link to="/status-surat" className="service-link">
+                <Link
+                  onClick={() => {
+                    scroll.scrollToTop({
+                      duration: 100, // Durasi animasi dalam milidetik
+                      smooth: "easeInOutQuart", // Efek easing (percepatan/perlambatan)
+                    });
+                  }}
+                  to="/status-surat"
+                  className="service-link"
+                >
                   Cek Status
                 </Link>
               </div>

@@ -16,7 +16,7 @@ const UMKMDetail = () => {
   return (
     <div className="umkm-detail-container">
       <h1>{umkm.nama}</h1>
-      <img src={Umkm2} alt={Umkm2} className="umkm-image" />
+      <img src={Umkm2} alt={Umkm2} className="umkm-detail-image" />
       <table className="umkm-table">
         <tbody>
           <tr>

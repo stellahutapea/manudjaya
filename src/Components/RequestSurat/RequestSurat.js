@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import Axios from "axios";
+import { connect } from "react-redux";
 import swal from "sweetalert";
+import { animateScroll as scroll } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 
 import { API_URL } from "../../Constants/Api";
 import "./RequestSurat.css";
 
-const RequestSurat = () => {
+const RequestSurat = ({ user }) => {
   const [formData, setFormData] = useState({
     fullName: "",
-    email: "",
+    email: user.email,
     nik: "",
     alamat: "",
     jenisSurat: "Surat Keterangan Domisili",
@@ -32,7 +34,7 @@ const RequestSurat = () => {
 
       setFormData({
         fullName: "",
-        email: "",
+        email: user.email,
         nik: "",
         alamat: "",
         jenisSurat: "Surat Keterangan Domisili",
@@ -47,8 +49,11 @@ const RequestSurat = () => {
         button: "OK !",
       });
       navigate("/status-surat");
+      scroll.scrollToTop({
+        duration: 100, // Durasi animasi dalam milidetik
+        smooth: "easeInOutQuart", // Efek easing (percepatan/perlambatan)
+      });
     } catch (err) {
-      console.log(err);
       swal({
         title: "Ooopps !",
         text: "Gagal",
@@ -82,7 +87,8 @@ const RequestSurat = () => {
             id="email"
             name="email"
             value={formData.email}
-            onChange={handleChange}
+            disabled
+            // onChange={handleChange}
             required
           />
         </div>
@@ -145,4 +151,10 @@ const RequestSurat = () => {
   );
 };
 
-export default RequestSurat;
+const mapStateToProps = (state) => {
+  return {
+    user: state.user.user,
+  };
+};
+
+export default connect(mapStateToProps)(RequestSurat);
