@@ -15,8 +15,8 @@ const Footer = () => {
           <p>
             
             <br />
-            Email:{" "}
-            <a href="mailto:info@desamanudjaya.com"></a>
+            Email:{"layanandesa@manudjaya.com "}
+            <a href="mailto:layanandesa@manudjaya.com"></a>
           </p>
         </div>
         <div className="footer-social">

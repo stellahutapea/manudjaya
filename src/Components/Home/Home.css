@@ -91,13 +91,10 @@ body {
 }
 
 .side-container {
-  width: 250px; /* Ubah lebar sesuai kebutuhan Anda */
-  height: 30%; /* Mengisi tinggi kontainer sesuai layar */
-  position: fixed; /* Membuatnya tetap di posisi ketika scrolling */
+    position: fixed; /* Membuatnya tetap di posisi ketika scrolling */
   align-items: right;
   top: 75px;
   right: 0; /* Menempatkan kontainer di pojok kanan */
-  background-color: #333; /* Warna latar belakang */
   color: #fff; /* Warna teks */
   padding: 20px; /* Jarak dalam kontainer */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
@@ -105,10 +102,13 @@ body {
 
 /* Mengatur tampilan sidebar */
 .sidebar {
+  width: 250px; /* Ubah lebar sesuai kebutuhan Anda */
+  height: 30%; /* Mengisi tinggi kontainer sesuai layar */
   flex: 1; /* Menggunakan semua ruang yang tersedia */
   background-color: #333; /* Warna latar belakang sidebar */
   color: #fff; /* Warna teks di sidebar */
-  padding: 1px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .sidebar h1{
@@ -116,8 +116,8 @@ body {
   font-size: 1.2rem;
   /* Perbesar font judul */
   margin-bottom: 2pxpx;
-  font-weight: bold;
-  /* Tambahkan ketebalan font */
+  font-weight: bold;  /* Tambahkan ketebalan font */
+  border-radius: 10px;
 }
 
 .sidebar p {
