@@ -4,6 +4,7 @@ import { Element, Link, animateScroll as scroll } from "react-scroll";
 import "./Home.css";
 import DestinasiCarousel from "./Carousel/Carousel";
 import BeritaScreen from "./Berita/BeritaScreen";
+import { jadwalronda } from "../../Assets/Image/index";
 
 const Home = () => {
   return (
