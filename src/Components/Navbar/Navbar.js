@@ -52,7 +52,8 @@ const Navbar = ({ user }) => {
 
   return (
     <nav className={`navbar ${menuOpen ? "active" : ""}`}>
-      <img src={IconDesa} alt="IconDesa" className="icon-image" />
+      
+      <img src={IconDesa} alt="IconDesa" className="icon-image"/>    
       <div className="menu-icon" onClick={toggleMenu}></div>
       <ul className={`nav-list ${menuOpen ? "active" : ""}`}>
         <li className="nav-item">
