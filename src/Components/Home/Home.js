@@ -36,12 +36,12 @@ const Home = () => {
               <p>Selasa: Bambang Surya, Dusun 3</p>
             </div>
       </div>
-      <Element name="destinasi-carousel" className="element">
+      {/* <Element name="destinasi-carousel" className="element"> */}
         {/* Gunakan Element untuk menandai elemen yang akan di-scroll */}
-        <DestinasiCarousel />
-      </Element>
-      <div className="divider"></div>
-      <BeritaScreen />
+        {/* <DestinasiCarousel /> */}
+      {/* </Element> */}
+      {/* <div className="divider"></div> */}
+      {/* <BeritaScreen /> */}
     </>
   );
 };
