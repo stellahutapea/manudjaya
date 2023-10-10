@@ -32,7 +32,7 @@ const Home = () => {
       <div className="side-container">
             <div className="sidebar">
               <h1>Jadwal Ronda</h1> 
-              <img src={JadwalRonda} alt="JadwalRonda" className="ronda-image" />
+              <img src={jadwalronda} alt="JadwalRonda" className="ronda-image" />
             </div>
       </div>
       {/* <Element name="destinasi-carousel" className="element"> */}
