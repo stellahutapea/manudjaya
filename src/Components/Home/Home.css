@@ -91,9 +91,7 @@ body {
 }
 
 .side-container {
-  width: 250px; /* Ubah lebar sesuai kebutuhan Anda */
-  height: 30%; /* Mengisi tinggi kontainer sesuai layar */
-  position: fixed; /* Membuatnya tetap di posisi ketika scrolling */
+    position: fixed; /* Membuatnya tetap di posisi ketika scrolling */
   align-items: right;
   top: 75px;
   right: 0; /* Menempatkan kontainer di pojok kanan */
@@ -105,10 +103,13 @@ body {
 
 /* Mengatur tampilan sidebar */
 .sidebar {
+  width: 250px; /* Ubah lebar sesuai kebutuhan Anda */
+  height: 30%; /* Mengisi tinggi kontainer sesuai layar */
   flex: 1; /* Menggunakan semua ruang yang tersedia */
   background-color: #333; /* Warna latar belakang sidebar */
   color: #fff; /* Warna teks di sidebar */
   padding: 1px;
+  border-radius: 10px;
 }
 
 .sidebar h1{
