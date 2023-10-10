@@ -91,7 +91,7 @@ body {
 }
 
 .side-container {
-  width: 300px; /* Ubah lebar sesuai kebutuhan Anda */
+  width: 200px; /* Ubah lebar sesuai kebutuhan Anda */
   height: 100%; /* Mengisi tinggi kontainer sesuai layar */
   position: fixed; /* Membuatnya tetap di posisi ketika scrolling */
   top: 0;
