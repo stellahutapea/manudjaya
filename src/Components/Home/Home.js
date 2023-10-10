@@ -32,6 +32,7 @@ const Home = () => {
       <div className="side-container">
             <div className="sidebar">
               <h1>Jadwal Ronda</h1> 
+              <p>Senin: Samid</p>
             </div>
       </div>
       <Element name="destinasi-carousel" className="element">
