@@ -32,8 +32,8 @@ const Home = () => {
       <div className="side-container">
             <div className="sidebar">
               <h1>Jadwal Ronda</h1> 
-              <p>Senin: Cahyo Prima, Dusun 1 RW 02)</p>
-              <p>Selasa: Bambang Surya, Dusun 3 RW 01)</p>
+              <p>Senin: Cahyo Prima, Dusun 1</p>
+              <p>Selasa: Bambang Surya, Dusun 3</p>
             </div>
       </div>
       <Element name="destinasi-carousel" className="element">
