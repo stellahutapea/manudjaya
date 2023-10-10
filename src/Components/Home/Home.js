@@ -30,7 +30,9 @@ const Home = () => {
         </div>
       </div>
       <div className="side-container">
-        tes
+            <div className="sidebar">
+              <h1>Jadwal Ronda</h1> 
+            </div>
       </div>
       <Element name="destinasi-carousel" className="element">
         {/* Gunakan Element untuk menandai elemen yang akan di-scroll */}
