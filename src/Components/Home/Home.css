@@ -49,8 +49,8 @@ body {
 .hero-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: chocolate;
-  color: #fff;
+  background-color: #A3d89a;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -59,7 +59,7 @@ body {
 }
 
 .hero-button:hover {
-  background-color: #d2691e;
+  background-color: #A3d89a;
   color: #fff;
 }
 
@@ -88,4 +88,23 @@ body {
   margin-right: auto;
   border: none;
   border-radius: 4px;
+}
+
+.side-container {
+  width: 200px; /* Ubah lebar sesuai kebutuhan Anda */
+  height: 20%; /* Mengisi tinggi kontainer sesuai layar */
+  position: relative; /* Membuatnya tetap di posisi ketika scrolling */
+  right: 0; /* Menempatkan kontainer di pojok kanan */
+  background-color: #333; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  padding: 20px; /* Jarak dalam kontainer */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+}
+
+/* Mengatur tampilan sidebar */
+.sidebar {
+  flex: 1; /* Menggunakan semua ruang yang tersedia */
+  background-color: #333; /* Warna latar belakang sidebar */
+  color: #fff; /* Warna teks di sidebar */
+  padding: 20px;
 }

@@ -20,7 +20,7 @@
 }
 
 .footer-logo h1 {
-  color: #fff;
+  color: #000000;
   font-size: 2.5rem;
   /* Perbesar font judul */
   margin-bottom: 2pxpx;
@@ -31,7 +31,8 @@
 .footer-logo p {
   font-size: 1.2rem;
   line-height: 1.4;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  color:#000000;
 }
 
 .footer-info {
@@ -42,10 +43,11 @@
   font-size: 1.2rem;
   line-height: 1.4;
   margin-bottom: 10px;
+  color:#000000;
 }
 
 .footer-info a {
-  color: #fff;
+  color: #000000;
   text-decoration: underline;
   /* Tambahkan garis bawah pada tautan */
 }
@@ -82,7 +84,7 @@
 }
 
 .footer-bottom {
-  background-color: #3a2a12;
+  background-color: #e6f5e6;
   padding: 10px 0;
   text-align: center;
 }
@@ -90,5 +92,5 @@
 .footer-bottom p {
   font-size: 1rem;
   margin: 0;
-  color: #fff;
+  color: #000000;
 }
