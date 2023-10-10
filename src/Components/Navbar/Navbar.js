@@ -53,6 +53,7 @@ const Navbar = ({ user }) => {
   return (
     <nav className={`navbar ${menuOpen ? "active" : ""}`}>
       <img src={IconDesa} alt="IconDesa" className="icon-image" />
+      Manud Jaya
       <div className="menu-icon" onClick={toggleMenu}></div>
       <ul className={`nav-list ${menuOpen ? "active" : ""}`}>
         <li className="nav-item">
