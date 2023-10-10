@@ -110,3 +110,7 @@ body {
   color: #fff; /* Warna teks di sidebar */
   padding: 1px;
 }
+
+.sidebar h1{
+  color: #fff; /* Warna teks di sidebar */
+}
