@@ -91,15 +91,11 @@ body {
 }
 
 .side-container {
-  width: 200px; /* Ubah lebar sesuai kebutuhan Anda */
-  height: 100%; /* Mengisi tinggi kontainer sesuai layar */
-  position: fixed; /* Membuatnya tetap di posisi ketika scrolling */
-  top: 0;
-  right: 0; /* Menempatkan kontainer di pojok kanan */
-  background-color: #333; /* Warna latar belakang */
-  color: #fff; /* Warna teks */
-  padding: 20px; /* Jarak dalam kontainer */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+  background-color: #ece2e200;
+  min-height: 100vh;
+  display: flex;
+  align-items: right;
+  justify-content: center;
 }
 
 /* Mengatur tampilan sidebar */
