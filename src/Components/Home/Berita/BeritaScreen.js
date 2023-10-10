@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { News } from "../../../Assets/Image/index";
 import "./BeritaCard.css";
 
-//const beritaData = [
+const beritaData = [
   {
     id: 1,
     judul: "Pengembangan Ekowisata Desa",
