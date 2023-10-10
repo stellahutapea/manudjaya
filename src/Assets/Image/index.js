@@ -1,4 +1,5 @@
 export const IconDesa = require("./IconDesa.png");
+export const jadwalronda = require("./jadwalronda.png");
 export const BackgroundIntro = require("./BackgroundIntro.jpg");
 export const GoogleMap = require("./GoogleMap.png");
 export const Wisata1 = require("./1.jpeg");

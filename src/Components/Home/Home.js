@@ -4,6 +4,7 @@ import { Element, Link, animateScroll as scroll } from "react-scroll";
 import "./Home.css";
 import DestinasiCarousel from "./Carousel/Carousel";
 import BeritaScreen from "./Berita/BeritaScreen";
+import { jadwalronda } from "../../Assets/Image/index";
 
 const Home = () => {
   return (
@@ -32,8 +33,7 @@ const Home = () => {
       <div className="side-container">
             <div className="sidebar">
               <h1>Jadwal Ronda</h1> 
-              <p>Senin: Cahyo Prima, Dusun 1</p>
-              <p>Selasa: Bambang Surya, Dusun 3</p>
+              <img src={jadwalronda} alt="JadwalRonda" className="ronda-image" />
             </div>
       </div>
       {/* <Element name="destinasi-carousel" className="element"> */}
