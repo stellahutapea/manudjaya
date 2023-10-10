@@ -23,6 +23,7 @@ import Berita from "../Berita/Berita";
 import UMKMList from "../Umkm/UMKMList";
 import UMKMDetail from "../Umkm/UMKMDetail";
 import InputUmkm from "../InputUmkm/InputUmkm";
+import UMKMApproval from "../Umkm/UMKMApproval";
 
 const AppRouter = ({ user }) => {
   return (
@@ -33,14 +34,6 @@ const AppRouter = ({ user }) => {
           element={
             <Layout>
               <BlankPage />
-            </Layout>
-          }
-        />
-        <Route
-          path="/input-umkm"
-          element={
-            <Layout>
-              <InputUmkm />
             </Layout>
           }
         />
@@ -109,7 +102,7 @@ const AppRouter = ({ user }) => {
           }
         />
         <Route
-          path="/finance"
+          path="/keuangan"
           element={
             <Layout>
               <Keuangan />
@@ -170,6 +163,26 @@ const AppRouter = ({ user }) => {
                 </Layout>
               }
             />
+            {user.role === "user" && (
+              <Route
+                path="/input-umkm"
+                element={
+                  <Layout>
+                    <InputUmkm />
+                  </Layout>
+                }
+              />
+            )}
+            {user.role === "kepalaDesa" && (
+              <Route
+                path="/umkm-approval"
+                element={
+                  <Layout>
+                    <UMKMApproval />
+                  </Layout>
+                }
+              />
+            )}
           </>
         )}
       </Routes>

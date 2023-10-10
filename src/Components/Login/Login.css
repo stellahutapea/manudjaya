@@ -1,15 +1,27 @@
 /* Login.css */
 
+body {
+    background-image: url('../../Assets/Image/desa.jpg');
+    /* Ganti 'path/to/your/image.jpg' dengan lokasi relatif atau URL gambar Anda. */
+    background-size: cover;
+    /* Background image akan ditampilkan dengan ukuran sampai seluruh area body tercakup. */
+    background-repeat: no-repeat;
+    /* Mencegah gambar latar belakang berulang. */
+    background-attachment: fixed;
+    /* Membuat gambar latar belakang tetap di tempat saat menggulir halaman. (Opsional) */
+  }
+
 .login-container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #e6f5e6; /* Warna hijau muda yang mencerminkan tema alam */
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 200px;
     margin-bottom: 200px;
+    /* background-image: url('../../Assets/Image/desa.jpg'); */
 }
 
 .login-container h2 {
@@ -50,12 +62,12 @@
 }
 
 .form-group input:focus {
-    border-bottom: 2px solid chocolate;
+    border-bottom: 2px solid #8db68f; /* Warna hijau tua saat fokus, mencerminkan tema alam */
     outline: none;
 }
 
 .submit-button {
-    background-color: chocolate;
+    background-color: #8db68f; /* Warna hijau tua yang mencerminkan tema alam */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -68,5 +80,5 @@
 }
 
 .submit-button:hover {
-    background-color: wheat;
+    background-color: #b3cc99; /* Warna hijau yang lebih terang saat hover, mencerminkan tema alam */
 }
