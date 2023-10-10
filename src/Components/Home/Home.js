@@ -29,6 +29,9 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <div className="side-container">
+        tes
+      </div>
       <Element name="destinasi-carousel" className="element">
         {/* Gunakan Element untuk menandai elemen yang akan di-scroll */}
         <DestinasiCarousel />

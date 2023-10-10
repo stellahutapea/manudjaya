@@ -89,3 +89,21 @@ body {
   border: none;
   border-radius: 4px;
 }
+
+.side-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px; /* Sesuaikan dengan lebar yang Anda inginkan */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Mengatur tampilan sidebar */
+.sidebar {
+  flex: 1; /* Menggunakan semua ruang yang tersedia */
+  background-color: #333; /* Warna latar belakang sidebar */
+  color: #fff; /* Warna teks di sidebar */
+  padding: 20px;
+}
