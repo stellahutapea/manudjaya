@@ -107,7 +107,7 @@ body {
   flex: 1; /* Menggunakan semua ruang yang tersedia */
   background-color: #333; /* Warna latar belakang sidebar */
   color: #fff; /* Warna teks di sidebar */
-  padding: 1px;
+  padding: 10px;
   border-radius: 10px;
 }
 
