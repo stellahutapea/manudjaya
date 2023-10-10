@@ -9,6 +9,7 @@ import Cookies from "universal-cookie";
 import { setUser } from "../../redux/reducers/userActions";
 import { API_URL } from "../../Constants/Api";
 import "./Login.css";
+import { LoginIcon } from "../../Assets/Image";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ const Login = () => {
 
     try {
       const response = await Axios.post(`${API_URL}/login/`, formData);
-      
+
       const { fullName, email, role, token } = response.data;
       const cookie = new Cookies();
 
@@ -40,9 +41,8 @@ const Login = () => {
 
       swal({
         title: "Login Berhasil",
-        text: "Selamat datang, Anda berhasil masuk!",
         icon: "success",
-        button: "OK",
+        button: "OK !",
       });
 
       cookie.set(
@@ -57,67 +57,78 @@ const Login = () => {
       setLoading(false);
     } catch (error) {
       swal({
-        title: "Login Gagal",
-        text: "Maaf, login tidak berhasil. Silakan coba lagi.",
+        title: "Ooopps !",
+        text: "Gagal Loginn brooooo!",
         icon: "error",
-        button: "OK",
+        button: "OK !",
       });
       setLoading(false);
     }
   };
 
   return (
-    <div className="login-container">
-      <h2>Login Akun</h2>
-      <form onSubmit={handleSubmit} className="login-form">
-        <div className="form-group">
-          <label htmlFor="email">Alamat Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Kata Sandi</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-        </div>
+    <div style={{ display: "flex", justifyContent: "space-between", marginLeft:"300px"}}>
+      <div
+        style={{ width: "400px", height: "500px", backgroundColor: "white", marginTop:"200px", marginBottom:"100px", borderRadius:"10px" }}
+      >
+      <div style={{paddingTop:"80px",textAlign:"center"}}>
+        <h1 style={{color:"black"}}>Selamat Datang</h1>
+        <p>Silahkan masuk untuk melanjutkan</p>
+        <img src={LoginIcon} style={{width:"300px"}} />
+      </div>
+      </div>
+      <div className="login-container">
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit} className="login-form">
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          {loading ? (
+            <></>
+          ) : (
+            <button type="submit" className="submit-button" disabled={loading}>
+              Login
+            </button>
+          )}
+        </form>
         {loading ? (
-          <></>
+          "Loading..."
         ) : (
-          <button type="submit" className="submit-button" disabled={loading}>
-            Masuk
-          </button>
+          <p>
+            Belum punya akun?{" "}
+            <Link
+              onClick={() => {
+                scroll.scrollToTop({
+                  duration: 100, // Durasi animasi dalam milidetik
+                  smooth: "easeInOutQuart", // Efek easing (percepatan/perlambatan)
+                });
+              }}
+              to="/register"
+            >
+              Daftar disini
+            </Link>
+          </p>
         )}
-      </form>
-      {loading ? (
-        "Sedang Memuat..."
-      ) : (
-        <p>
-          Belum memiliki akun?{" "}
-          <Link
-            onClick={() => {
-              scroll.scrollToTop({
-                duration: 100, // Durasi animasi dalam milidetik
-                smooth: "easeInOutQuart", // Efek easing (percepatan/perlambatan)
-              });
-            }}
-            to="/register"
-          >
-            Daftar di sini
-          </Link>
-        </p>
-      )}
+      </div>
     </div>
   );
 };
