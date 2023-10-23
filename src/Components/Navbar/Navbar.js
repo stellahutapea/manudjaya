@@ -52,8 +52,7 @@ const Navbar = ({ user }) => {
 
   return (
     <nav className={`navbar ${menuOpen ? "active" : ""}`}>
-      
-      <img src={IconDesa} alt="IconDesa" className="icon-image"/>    
+      <img src={IconDesa} alt="IconDesa" className="icon-image" />
       <div className="menu-icon" onClick={toggleMenu}></div>
       <ul className={`nav-list ${menuOpen ? "active" : ""}`}>
         <li className="nav-item">
@@ -68,6 +67,20 @@ const Navbar = ({ user }) => {
             className="nav-link"
           >
             Halaman Utama
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            onClick={() => {
+              scroll.scrollToTop({
+                duration: 100, // Durasi animasi dalam milidetik
+                smooth: "easeInOutQuart", // Efek easing (percepatan/perlambatan)
+              });
+            }}
+            to="/financial-report"
+            className="nav-link"
+          >
+            Keuangan
           </Link>
         </li>
         {/* <li className="nav-item">
