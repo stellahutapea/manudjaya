@@ -91,32 +91,43 @@ body {
 }
 
 .side-container {
-    position: fixed; /* Membuatnya tetap di posisi ketika scrolling */
+  position: fixed;
+  /* Membuatnya tetap di posisi ketika scrolling */
   align-items: right;
   top: 75px;
-  right: 0; /* Menempatkan kontainer di pojok kanan */
-  color: #fff; /* Warna teks */
-  padding: 20px; /* Jarak dalam kontainer */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+  right: 0;
+  /* Menempatkan kontainer di pojok kanan */
+  color: #fff;
+  /* Warna teks */
+  padding: 20px;
+  /* Jarak dalam kontainer */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Efek bayangan */
 }
 
 /* Mengatur tampilan sidebar */
 .sidebar {
-  width: 300px; /* Ubah lebar sesuai kebutuhan Anda */
-  height: 30%; /* Mengisi tinggi kontainer sesuai layar */
-  flex: 1; /* Menggunakan semua ruang yang tersedia */
-  background-color: #333; /* Warna latar belakang sidebar */
-  color: #fff; /* Warna teks di sidebar */
+  width: 300px;
+  /* Ubah lebar sesuai kebutuhan Anda */
+  height: 30%;
+  /* Mengisi tinggi kontainer sesuai layar */
+  flex: 1;
+  /* Menggunakan semua ruang yang tersedia */
+  background-color: #333;
+  /* Warna latar belakang sidebar */
+  color: #fff;
+  /* Warna teks di sidebar */
   padding: 10px;
   border-radius: 10px;
 }
 
-.sidebar h1{
+.sidebar h1 {
   color: #fff;
   font-size: 1.2rem;
   /* Perbesar font judul */
   margin-bottom: 2pxpx;
-  font-weight: bold;  /* Tambahkan ketebalan font */
+  font-weight: bold;
+  /* Tambahkan ketebalan font */
   border-radius: 10px;
 }
 
@@ -124,10 +135,36 @@ body {
   font-size: 0.8rem;
   line-height: 1.4;
   margin-bottom: 3px;
-  color:#fff;
+  color: #fff;
 }
 
 .ronda-image {
   width: 220px;
   height: 100px;
+}
+
+table,
+tr,
+td,
+th,
+tbody,
+thead {
+  color: white !important;
+  background-color: black !important;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
