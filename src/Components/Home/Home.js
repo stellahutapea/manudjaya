@@ -131,7 +131,7 @@ const Home = () => {
         <h1 style={{ color: "white", textAlign: "center" }}>
           VIDEO AYAM MAKAN BERAS
         </h1>
-        <hr />
+        <hr />   
         <div style={{ marginTop: "30px" }}>
           <YoutubeVideo videoId={"MesxaHEdMNQ?si=X717OXexZ7cCfF_6"} />
         </div>

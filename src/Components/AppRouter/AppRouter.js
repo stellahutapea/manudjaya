@@ -24,6 +24,7 @@ import UMKMList from "../Umkm/UMKMList";
 import UMKMDetail from "../Umkm/UMKMDetail";
 import InputUmkm from "../InputUmkm/InputUmkm";
 import UMKMApproval from "../Umkm/UMKMApproval";
+import FinancialReport from "../FinancialReport/FinancialReport";
 
 const AppRouter = ({ user }) => {
   return (
@@ -34,6 +35,14 @@ const AppRouter = ({ user }) => {
           element={
             <Layout>
               <BlankPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/financial-report"
+          element={
+            <Layout>
+              <FinancialReport />
             </Layout>
           }
         />
